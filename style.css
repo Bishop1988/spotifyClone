@@ -8,6 +8,7 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
 }
 
 a {
@@ -24,14 +25,16 @@ ul {
     height: 80px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 20px;
+    width: 100%;
 }
 
 .logo a {
@@ -45,7 +48,7 @@ ul {
 
 .nav-link-item {
     margin: 0 1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: white;
 }
 
@@ -53,7 +56,13 @@ ul {
     color: #1ed760;
 }
 
+
+
 .hero-container {
+    background-color: rgb(41, 65, 171);
+    background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+    background-size: 175%;
+    background-position: 46% 4%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -62,13 +71,108 @@ ul {
 
 .hero-title {
     font-size: 9.5rem;
-    font-weight: 800;
-    letter-spacing: -0.5rem;
+    font-weight: 700;
+    letter-spacing: -0.6rem;
     color: #1ed760;
+    font-size: 156px;
+    line-height: 166px;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
     /* color: #117a37; */
+    width: 800px;
+    text-indent: -3.3em;
+    transform: translate(125px, 0px);
+    text-align: center;
 }
 
 .hero-title-text {
+    text-align: center;
     font-weight: 600;
+    margin-top: 3.8rem;
     color: #1ed760;
 }
+
+.hero-button {
+    margin-top: 3.8rem;
+    text-align: center;
+}
+
+.footer {
+    height: 50vh;
+    background-color: black;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px dotted yellow;
+    margin: 0 70px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    /* border: 1px dashed yellowgreen; */
+    /* padding: 80px 0 50px; */
+}
+
+.links, .links a{
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    border: 1px dashed pink;
+    flex: 0.7;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    border: 1px dashed orange;
+    flex: 3;
+}
+
+.social {
+    flex: 1;
+    border: 1px dashed brown;
+}
+
+.social-container {
+    border: 1px dashed orchid;
+}
+
+.links-legal-container a {
+    color: white;
+}
+
+.links-legal-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-legal-container ul {
+    display: flex; 
+    border: 1px dashed blue;
+    align-items: center;
+}
+
+.links-legal-container ul li {
+    padding: 0 15px;
+}
+
+.copywrite-information {
+    color: white;
+    border: 1px dashed white;
+}
+
