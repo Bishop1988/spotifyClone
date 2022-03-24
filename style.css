@@ -37,6 +37,21 @@ ul {
     width: 100%;
 }
 
+.logo-text {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.logo-text p {
+    padding-left: 7px;
+}
+
+.logo i {
+    font-size: 2.8rem;
+}
+
 .logo a {
     color: white;
 }
@@ -56,8 +71,6 @@ ul {
     color: #1ed760;
 }
 
-
-
 .hero-container {
     background-color: rgb(41, 65, 171);
     background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
@@ -74,7 +87,7 @@ ul {
     font-weight: 700;
     letter-spacing: -0.6rem;
     color: #1ed760;
-    font-size: 156px;
+    font-size: 146px;
     line-height: 166px;
     width: 800px;
     text-indent: -3.3em;
@@ -82,25 +95,46 @@ ul {
     text-align: center;
 }
 
+.hero-text {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-title-text {
     text-align: center;
     font-weight: 600;
-    margin-top: 3.8rem;
+    font-size: 1.15rem;
+    letter-spacing: -0.02rem;
+    margin-top: 2.6rem;
+    font-weight: 500;
     color: #1ed760;
 }
 
 .hero-button {
-    margin-top: 3.8rem;
+    margin-top: 2.8rem;
     text-align: center;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    letter-spacing: -0.06rem;
+    color: rgb(41, 65, 171);
+    background-color: #1ed760;
+    transition: transform .3s all;
+}
+
+.hero-button:hover {
+    transform: scale(1.03, 1.03);
 }
 
 .footer {
     height: 50vh;
     background-color: black;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-height: 500px;
 }
 
@@ -108,16 +142,16 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px dotted yellow;
-    margin: 0 70px;
+    /* margin: 0 133px; */
+    min-height: 440px;
+    /* max-width: 1200px; */
 }
 
 .links-container {
     display: flex;
     justify-content: space-between;
     color: white;
-    /* border: 1px dashed yellowgreen; */
-    /* padding: 80px 0 50px; */
+    height: 100%;
 }
 
 .links, .links a{
@@ -126,39 +160,36 @@ ul {
 
 .footer-logo {
     display: flex;
-    justify-content: center;
-    border: 1px dashed pink;
-    flex: 0.7;
 }
 
 .links {
     display: flex;
     justify-content: space-around;
-    border: 1px dashed orange;
-    flex: 3;
-}
-
-.social {
-    flex: 1;
-    border: 1px dashed brown;
+    width: 585px;
+    margin-right: 200px;
 }
 
 .social-container {
-    border: 1px dashed orchid;
+    max-width: 350px;
 }
 
 .links-legal-container a {
-    color: white;
+    color: grey;
+}
+
+.links-legal-container a:hover {
+    color: #1ed760;
 }
 
 .links-legal-container {
     display: flex;
     justify-content: space-between;
+    font-size: .75rem;
+    font-weight: 500;
 }
 
 .links-legal-container ul {
     display: flex; 
-    border: 1px dashed blue;
     align-items: center;
 }
 
@@ -167,7 +198,66 @@ ul {
 }
 
 .copywrite-information {
-    color: white;
-    border: 1px dashed white;
+    color: grey;
+    font-size: .75rem;
+}
+.copywrite-information p {
+    margin-bottom: 15px;
 }
 
+.footer-marTop {
+    margin-top: 38px;
+}
+
+.company-list-item, .communities-list-item, .useful-links-list-item {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+}
+
+.company-list-item:hover, .communities-list-item:hover, .useful-links-list-item:hover {
+    color: #1ed760;
+}
+
+.links-titles {
+    font-size: .9rem;
+    color: grey;
+    font-weight: 700;
+    margin-top: 58px;
+    margin-bottom: 1.75rem;
+}
+
+.social-ul-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 59px;
+}
+
+.icons {
+    color: white;
+}
+
+.icons:hover {
+    color: #1ed760;
+}
+
+.icon-containers {
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    background-color: #222326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons:nth-child(-n+2) {
+    margin-right: 15px;
+}
+
+.icons:nth-child(n+2) {
+    font-size: 1.5rem;
+}
+
+.icons:nth-child(-n+1) {
+    font-size: 1.93rem;
+}
