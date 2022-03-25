@@ -67,8 +67,18 @@ ul {
     color: white;
 }
 
-.nav-link-item:hover {
+.dull {
+    color: #d9dadc;
+    margin: 0 1rem;
+    font-weight: 700;
+}
+
+.nav-link-item:hover, .dull:hover {
     color: #1ed760;
+}
+
+.line {
+    font-weight: 400;
 }
 
 .hero-container {
@@ -96,10 +106,10 @@ ul {
 }
 
 .hero-text {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 485px
 }
 
 .hero-title-text {
@@ -113,6 +123,7 @@ ul {
 }
 
 .hero-button {
+    position: relative;
     margin-top: 2.8rem;
     text-align: center;
     border-radius: 30px;
@@ -126,6 +137,7 @@ ul {
 
 .hero-button:hover {
     transform: scale(1.03, 1.03);
+    background-color: #2DE26D;
 }
 
 .footer {
